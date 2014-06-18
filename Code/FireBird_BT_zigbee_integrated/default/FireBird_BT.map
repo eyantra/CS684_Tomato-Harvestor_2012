@@ -1,0 +1,694 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_udivmodhi4.o)
+                              LCD.o (__udivmodhi4)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_exit.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o (exit)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clear_bss.o)
+                              FireBird_BT.o (__do_clear_bss)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fixunssfsi.o)
+                              FireBird_BT.o (__fixunssfsi)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fixunssfsi.o) (__subsf3)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_mul_sf.o)
+                              FireBird_BT.o (__mulsf3)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_div_sf.o)
+                              trough.o (__divsf3)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_gt_sf.o)
+                              FireBird_BT.o (__gtsf2)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_ge_sf.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fixunssfsi.o) (__gesf2)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_lt_sf.o)
+                              FireBird_BT.o (__ltsf2)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_si_to_sf.o)
+                              trough.o (__floatsisf)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_sf_to_si.o)
+                              trough.o (__fixsfsi)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_thenan_sf.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o) (__thenan_sf)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_usi_to_sf.o)
+                              trough.o (__floatunsisf)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_prologue.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o) (__prologue_saves__)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_epilogue.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o) (__epilogue_restores__)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clzsi2.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_si_to_sf.o) (__clzsi2)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_pack_sf.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o) (__pack_f)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_unpack_sf.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o) (__unpack_f)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fpcmp_parts_sf.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_gt_sf.o) (__fpcmp_parts_f)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clz.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clzsi2.o) (__clz_tab)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(atoi.o)
+                              FireBird_BT.o (atoi)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(mul10.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(atoi.o) (__mulhi_const_10)
+
+Allocating common symbols
+Common symbol       size              file
+
+decode              0x1               FireBird_BT.o
+ser_trax_buf        0x64              FireBird_BT.o
+res_wait            0x1               FireBird_BT.o
+million             0x2               FireBird_BT.o
+ser_buf             0x64              FireBird_BT.o
+temp                0x2               FireBird_BT.o
+maincnt             0x1               FireBird_BT.o
+ADC_Value           0x1               linefollow.o
+mode                0x2               FireBird_BT.o
+trx_count           0x2               FireBird_BT.o
+tens                0x2               FireBird_BT.o
+botId               0x2               FireBird_BT.o
+trx_curr_cnt        0x2               FireBird_BT.o
+data                0x1               FireBird_BT.o
+count               0x2               FireBird_BT.o
+fcall               0x19              FireBird_BT.o
+hundred             0x2               FireBird_BT.o
+main_buf            0x64              FireBird_BT.o
+unit                0x2               FireBird_BT.o
+thousand            0x2               FireBird_BT.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00800200         0x0000fe00         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800200
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+LOAD FireBird_BT.o
+LOAD BlueTooth.o
+LOAD LCD.o
+LOAD MotorControl.o
+LOAD linefollow.o
+LOAD trough.o
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x3b7e
+ *(.vectors)
+ .vectors       0x00000000       0xe4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x000000e4                . = ALIGN (0x2)
+                0x000000e4                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000e4        0x0 linker stubs
+ *(.trampolines*)
+                0x000000e4                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000e4                __ctors_start = .
+ *(.ctors)
+                0x000000e4                __ctors_end = .
+                0x000000e4                __dtors_start = .
+ *(.dtors)
+                0x000000e4                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000e4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+                0x000000e4                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000e4       0x10 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000f4       0x1a c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+                0x000000f4                __do_copy_data
+ .init4         0x0000010e       0x10 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clear_bss.o)
+                0x0000010e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000011e        0x8 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+ *(.init9)
+ *(.text)
+ .text          0x00000126        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+                0x00000126                __vector_38
+                0x00000126                __vector_22
+                0x00000126                __vector_28
+                0x00000126                __vector_1
+                0x00000126                __vector_32
+                0x00000126                __vector_34
+                0x00000126                __vector_24
+                0x00000126                __vector_12
+                0x00000126                __vector_55
+                0x00000126                __vector_46
+                0x00000126                __bad_interrupt
+                0x00000126                __vector_31
+                0x00000126                __vector_35
+                0x00000126                __vector_39
+                0x00000126                __vector_3
+                0x00000126                __vector_23
+                0x00000126                __vector_30
+                0x00000126                __vector_45
+                0x00000126                __vector_11
+                0x00000126                __vector_54
+                0x00000126                __vector_13
+                0x00000126                __vector_17
+                0x00000126                __vector_19
+                0x00000126                __vector_56
+                0x00000126                __vector_7
+                0x00000126                __vector_49
+                0x00000126                __vector_41
+                0x00000126                __vector_43
+                0x00000126                __vector_27
+                0x00000126                __vector_33
+                0x00000126                __vector_47
+                0x00000126                __vector_52
+                0x00000126                __vector_37
+                0x00000126                __vector_4
+                0x00000126                __vector_44
+                0x00000126                __vector_9
+                0x00000126                __vector_2
+                0x00000126                __vector_21
+                0x00000126                __vector_15
+                0x00000126                __vector_36
+                0x00000126                __vector_29
+                0x00000126                __vector_40
+                0x00000126                __vector_8
+                0x00000126                __vector_26
+                0x00000126                __vector_48
+                0x00000126                __vector_14
+                0x00000126                __vector_10
+                0x00000126                __vector_50
+                0x00000126                __vector_16
+                0x00000126                __vector_18
+                0x00000126                __vector_20
+                0x00000126                __vector_42
+ .text          0x0000012a      0x998 FireBird_BT.o
+                0x00000284                __vector_25
+                0x000003f6                init_devices
+                0x00000218                function_caller
+                0x0000012a                Init_Devices
+                0x0000018c                send_status
+                0x00000154                uart0_init
+                0x00000426                harvest
+                0x0000040c                main
+ .text          0x00000ac2      0x20c BlueTooth.o
+                0x00000c7a                BlueTooth_Add
+                0x00000ac2                Init_USART2
+                0x00000afa                __vector_51
+                0x00000bf0                __vector_53
+ .text          0x00000cce     0x1366 LCD.o
+                0x00001ddc                LCD_Cursor
+                0x00001e60                LCD_Print
+                0x000016cc                LCD_Init_Ports
+                0x00001da2                LCD_String
+                0x00001826                LCD_WR_Command
+                0x000016f6                LCD_Init
+                0x00001d8e                LCD_Home
+                0x00000cce                LCD_Reset_4bit
+                0x00001ada                LCD_WR_Char
+ .text          0x00002034      0x21c MotorControl.o
+                0x00002034                Init_Motor_Peri
+                0x00002046                motor_init
+                0x00002166                Right_Turn
+                0x000021dc                motor_c2_forward
+                0x00002086                Timer5_init
+                0x0000210c                Forward
+                0x00002218                motor_c1_stop
+                0x0000212a                Reverse
+                0x000020da                velocity
+                0x000021a0                motor_c1_forward
+                0x000021be                motor_c1_backward
+                0x00002148                Left_Turn
+                0x00002184                Stop
+                0x000021fa                motor_c2_backward
+                0x00002234                motor_c2_stop
+ .text          0x00002250      0x2f2 linefollow.o
+                0x00002406                right
+                0x0000241a                move_bot
+                0x000023f2                left
+                0x00002250                lcd_port_config
+                0x000023ca                forward
+                0x000022d2                ADC_Conversion
+                0x0000227a                adc_pin_config
+                0x000022a0                adc_init
+                0x0000238c                motion_set
+                0x00002346                print_sensor
+                0x000023de                stop
+ .text          0x00002542      0x6fe trough.o
+                0x000025b6                interrupt_left_init
+                0x00002542                __vector_6
+                0x000025e0                interrupt_right_init
+                0x0000260a                left_position_encoder_init
+                0x00002638                right_position_encoder_init
+                0x0000257c                __vector_5
+                0x00002666                distance_move
+                0x00002806                moveToTrough
+                0x00002b50                returnToInitial
+                0x000026fa                angle_rotate
+ .text          0x00002c40        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_udivmodhi4.o)
+ .text          0x00002c40        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_exit.o)
+ .text          0x00002c40        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clear_bss.o)
+ .text          0x00002c40       0x58 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fixunssfsi.o)
+                0x00002c40                __fixunssfsi
+ .text          0x00002c98      0x354 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o)
+                0x00002f30                __subsf3
+                0x00002f92                __addsf3
+ .text          0x00002fec      0x1f4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_mul_sf.o)
+                0x00002fec                __mulsf3
+ .text          0x000031e0      0x158 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_div_sf.o)
+                0x000031e0                __divsf3
+ .text          0x00003338       0x60 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_gt_sf.o)
+                0x00003338                __gtsf2
+ .text          0x00003398       0x60 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_ge_sf.o)
+                0x00003398                __gesf2
+ .text          0x000033f8       0x60 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_lt_sf.o)
+                0x000033f8                __ltsf2
+ .text          0x00003458       0xbc c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_si_to_sf.o)
+                0x00003458                __floatsisf
+ .text          0x00003514       0xa8 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_sf_to_si.o)
+                0x00003514                __fixsfsi
+ .text          0x000035bc        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_thenan_sf.o)
+ .text          0x000035bc       0xf2 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_usi_to_sf.o)
+                0x000035bc                __floatunsisf
+ .text          0x000036ae        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_prologue.o)
+ .text          0x000036ae        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_epilogue.o)
+ .text          0x000036ae       0x9e c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clzsi2.o)
+                0x000036ae                __clzsi2
+ .text          0x0000374c      0x1aa c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_pack_sf.o)
+                0x0000374c                __pack_f
+ .text          0x000038f6       0xf0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_unpack_sf.o)
+                0x000038f6                __unpack_f
+ .text          0x000039e6       0xb2 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fpcmp_parts_sf.o)
+                0x000039e6                __fpcmp_parts_f
+ .text          0x00003a98        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clz.o)
+ .text          0x00003a98       0x3c c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(atoi.o)
+                0x00003a98                atoi
+ .text          0x00003ad4       0x10 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(mul10.o)
+                0x00003ad4                __mulhi_const_10
+                0x00003ae4                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00003ae4       0x28 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_udivmodhi4.o)
+                0x00003ae4                __udivmodhi4
+ .text.libgcc   0x00003b0c        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_exit.o)
+ .text.libgcc   0x00003b0c        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00003b0c       0x38 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_prologue.o)
+                0x00003b0c                __prologue_saves__
+ .text.libgcc   0x00003b44       0x36 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_epilogue.o)
+                0x00003b44                __epilogue_restores__
+                0x00003b7a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00003b7a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_exit.o)
+                0x00003b7a                exit
+                0x00003b7a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00003b7a        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00003b7e                _etext = .
+
+.data           0x00800200      0x1de load address 0x00003b7e
+                0x00800200                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800200        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+ .data          0x00800200       0xd6 FireBird_BT.o
+ .data          0x008002d6        0x0 BlueTooth.o
+ .data          0x008002d6        0x0 LCD.o
+ .data          0x008002d6        0x0 MotorControl.o
+ .data          0x008002d6        0x0 linefollow.o
+ .data          0x008002d6        0x0 trough.o
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_udivmodhi4.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_exit.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clear_bss.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fixunssfsi.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_mul_sf.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_div_sf.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_gt_sf.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_ge_sf.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_lt_sf.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_si_to_sf.o)
+ .data          0x008002d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_sf_to_si.o)
+ .data          0x008002d6        0x8 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_thenan_sf.o)
+                0x008002d6                __thenan_sf
+ .data          0x008002de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_usi_to_sf.o)
+ .data          0x008002de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_prologue.o)
+ .data          0x008002de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_epilogue.o)
+ .data          0x008002de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clzsi2.o)
+ .data          0x008002de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_pack_sf.o)
+ .data          0x008002de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_unpack_sf.o)
+ .data          0x008002de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x008002de      0x100 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clz.o)
+                0x008002de                __clz_tab
+ .data          0x008003de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(atoi.o)
+ .data          0x008003de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(mul10.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008003de                . = ALIGN (0x2)
+                0x008003de                _edata = .
+                0x008003de                PROVIDE (__data_end, .)
+
+.bss            0x008003de      0x16c
+                0x008003de                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008003de        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6/crtm2560.o
+ .bss           0x008003de        0x4 FireBird_BT.o
+                0x008003e0                j
+                0x008003de                i
+ .bss           0x008003e2        0x0 BlueTooth.o
+ .bss           0x008003e2        0x0 LCD.o
+ .bss           0x008003e2        0x0 MotorControl.o
+ .bss           0x008003e2        0x4 linefollow.o
+                0x008003e3                Left_white_line
+                0x008003e2                flag
+                0x008003e5                Right_white_line
+                0x008003e4                Center_white_line
+ .bss           0x008003e6        0x4 trough.o
+                0x008003e6                ShaftCountRight
+                0x008003e8                ShaftCountLeft
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_udivmodhi4.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_exit.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clear_bss.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fixunssfsi.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_addsub_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_mul_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_div_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_gt_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_ge_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_lt_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_si_to_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_sf_to_si.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_thenan_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_usi_to_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_prologue.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_epilogue.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clzsi2.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_pack_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_unpack_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr6\libgcc.a(_clz.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(atoi.o)
+ .bss           0x008003ea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr6\libc.a(mul10.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008003ea      0x15f FireBird_BT.o
+                0x008003ea                decode
+                0x008003eb                ser_trax_buf
+                0x0080044f                res_wait
+                0x00800450                million
+                0x00800452                ser_buf
+                0x008004b6                temp
+                0x008004b8                maincnt
+                0x008004b9                mode
+                0x008004bb                trx_count
+                0x008004bd                tens
+                0x008004bf                botId
+                0x008004c1                trx_curr_cnt
+                0x008004c3                data
+                0x008004c4                count
+                0x008004c6                fcall
+                0x008004df                hundred
+                0x008004e1                main_buf
+                0x00800545                unit
+                0x00800547                thousand
+ COMMON         0x00800549        0x1 linefollow.o
+                0x00800549                ADC_Value
+                0x0080054a                PROVIDE (__bss_end, .)
+                0x00003b7e                __data_load_start = LOADADDR (.data)
+                0x00003d5c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080054a        0x0
+                0x0080054a                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080054a                PROVIDE (__noinit_end, .)
+                0x0080054a                _end = .
+                0x0080054a                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xc0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 FireBird_BT.o
+ .debug_aranges
+                0x00000020       0x20 BlueTooth.o
+ .debug_aranges
+                0x00000040       0x20 LCD.o
+ .debug_aranges
+                0x00000060       0x20 MotorControl.o
+ .debug_aranges
+                0x00000080       0x20 linefollow.o
+ .debug_aranges
+                0x000000a0       0x20 trough.o
+
+.debug_pubnames
+                0x00000000      0x722
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x17e FireBird_BT.o
+ .debug_pubnames
+                0x0000017e      0x11d BlueTooth.o
+ .debug_pubnames
+                0x0000029b      0x16a LCD.o
+ .debug_pubnames
+                0x00000405      0x10a MotorControl.o
+ .debug_pubnames
+                0x0000050f      0x104 linefollow.o
+ .debug_pubnames
+                0x00000613      0x10f trough.o
+
+.debug_info     0x00000000     0x1389
+ *(.debug_info)
+ .debug_info    0x00000000      0x493 FireBird_BT.o
+ .debug_info    0x00000493      0x21a BlueTooth.o
+ .debug_info    0x000006ad      0x74a LCD.o
+ .debug_info    0x00000df7      0x1a9 MotorControl.o
+ .debug_info    0x00000fa0      0x20d linefollow.o
+ .debug_info    0x000011ad      0x1dc trough.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x5d9
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x1a1 FireBird_BT.o
+ .debug_abbrev  0x000001a1       0xbc BlueTooth.o
+ .debug_abbrev  0x0000025d      0x159 LCD.o
+ .debug_abbrev  0x000003b6       0x78 MotorControl.o
+ .debug_abbrev  0x0000042e       0xe4 linefollow.o
+ .debug_abbrev  0x00000512       0xc7 trough.o
+
+.debug_line     0x00000000     0x1c35
+ *(.debug_line)
+ .debug_line    0x00000000      0x6e6 FireBird_BT.o
+ .debug_line    0x000006e6      0x192 BlueTooth.o
+ .debug_line    0x00000878      0x96b LCD.o
+ .debug_line    0x000011e3      0x246 MotorControl.o
+ .debug_line    0x00001429      0x304 linefollow.o
+ .debug_line    0x0000172d      0x508 trough.o
+
+.debug_frame    0x00000000      0x3f0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x90 FireBird_BT.o
+ .debug_frame   0x00000090       0x50 BlueTooth.o
+ .debug_frame   0x000000e0       0xa0 LCD.o
+ .debug_frame   0x00000180      0x100 MotorControl.o
+ .debug_frame   0x00000280       0xc0 linefollow.o
+ .debug_frame   0x00000340       0xb0 trough.o
+
+.debug_str      0x00000000      0x5eb
+ *(.debug_str)
+ .debug_str     0x00000000      0x1e9 FireBird_BT.o
+                                0x228 (size before relaxing)
+ .debug_str     0x000001e9       0x96 BlueTooth.o
+                                0x193 (size before relaxing)
+ .debug_str     0x0000027f       0x97 LCD.o
+                                0x22c (size before relaxing)
+ .debug_str     0x00000316       0xe5 MotorControl.o
+                                0x1ad (size before relaxing)
+ .debug_str     0x000003fb       0xcf linefollow.o
+                                0x1b6 (size before relaxing)
+ .debug_str     0x000004ca      0x121 trough.o
+                                0x1e9 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(FireBird_BT.elf elf32-avr)
+LOAD linker stubs

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:scrollbarStyle="outsideOverlay">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" android:background="#4e7eb2">
+<TextView  
+   	android:text="@string/hello"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ad2628"/>
+    
+
+<TextView  
+    android:id="@+id/xbox"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#ad4805" android:text="Acceleration in X:  - - - -"/>
+<TextView  
+    android:id="@+id/ybox"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ad4805" android:text="Acceleration in Y:  - - - -"/>
+<TextView  
+    android:id="@+id/zbox"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ad4805" android:text="Acceleration in Z:  - - - -"/>    
+
+<TextView  
+    android:id="@+id/cmdbox"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ffb71d4d"/><ImageView android:layout_height="wrap_content" android:id="@+id/ImageView" android:layout_weight="1" android:layout_width="fill_parent" android:layout_gravity="center"></ImageView>  
+<Button android:id="@+id/button_send"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Test Send" android:layout_width="wrap_content" android:layout_gravity="right"/> 
+            <Button android:id="@+id/button_forward"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Forward" android:layout_width="wrap_content" android:layout_gravity="right"/>  
+            <Button android:id="@+id/button_left"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Left" android:layout_width="wrap_content" android:layout_gravity="right"/> 
+            <Button android:id="@+id/button_right"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Right" android:layout_width="wrap_content" android:layout_gravity="right"/> 
+            <Button android:id="@+id/button_backward"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Back" android:layout_width="wrap_content" android:layout_gravity="right"/> 
+            <Button android:id="@+id/button_stop"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Stop" android:layout_width="wrap_content" android:layout_gravity="right"/> 
+            
+            <Button android:id="@+id/button_pulleyUp"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Pulley Up" android:layout_width="wrap_content" android:layout_gravity="left"/>    
+            <Button android:id="@+id/button_pulleyDown"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Pulley Down" android:layout_width="wrap_content" android:layout_gravity="left"/> 
+            <Button android:id="@+id/button_pulleyStop"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Pulley Stop" android:layout_width="wrap_content" android:layout_gravity="left"/>   
+			<Button android:id="@+id/button_CutterOn"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Cutter On" android:layout_width="wrap_content" android:layout_gravity="left"/> 
+			<Button android:id="@+id/button_CutterOff"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Cutter Off" android:layout_width="wrap_content" android:layout_gravity="left"/> 
+			<Button android:id="@+id/button_CameraOn"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Camera On" android:layout_width="wrap_content" android:layout_gravity="left"/> 
+            
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="bottom" android:background="#ad4805"><TextView android:id="@+id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bluetooth Address" android:textColor="#ffffffff" android:gravity="center" android:width="95px" android:layout_gravity="center"></TextView><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_gravity="center_vertical" android:id="@+id/btaddress" android:cursorVisible="false" android:layout_marginTop="3px" android:width="250px" android:text="00:19:A4:02:C6:AC"></EditText><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connect" android:id="@+id/connect" android:layout_weight="1" android:layout_gravity="center_vertical" android:layout_marginTop="3px"></Button>
+    
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disconnect" android:layout_weight="1" android:layout_gravity="center_vertical" android:layout_marginTop="3px" android:id="@+id/disconnect"></Button>
+
+
+</LinearLayout>
+
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="bottom" android:background="#ad4805"><TextView android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bot Speed (1-8)" android:textColor="#ffffffff" android:gravity="center" android:width="95px" android:layout_gravity="center"></TextView><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_gravity="center_vertical" android:id="@+id/etBotSpeed" android:cursorVisible="false" android:layout_marginTop="3px" android:width="250px" android:text="3"></EditText><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send Speed" android:id="@+id/btnSndSpeed" android:layout_weight="1" android:layout_gravity="center_vertical" android:layout_marginTop="3px"></Button>
+    
+
+
+</LinearLayout>
+
+<LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="bottom" android:background="#ad4805"><TextView android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trough Number" android:textColor="#ffffffff" android:gravity="center" android:width="95px" android:layout_gravity="center"></TextView><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_gravity="center_vertical" android:id="@+id/etTroughNumber" android:cursorVisible="false" android:layout_marginTop="3px" android:width="250px" android:text="2"></EditText><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Trough No:" android:id="@+id/btnSetTrough" android:layout_weight="1" android:layout_gravity="center_vertical" android:layout_marginTop="3px"></Button>
+    
+
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,450 @@
+/**
+ * Project Name: Tomato Harvester
+ * Author: 	Amandeep Chugh
+ * 			Ashish Kumar Agarwal
+ * 			Jayasree Kaveti
+ * 			Lorin Ahmed
+ */
+/********************************************************************************
+
+   Copyright (c) 2010, ERTS Lab IIT Bombay erts@cse.iitb.ac.in               -*- c -*-
+   All rights reserved.
+
+   Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions are met:
+
+   * Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+
+   * Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the
+     distribution.
+
+   * Neither the name of the copyright holders nor the names of
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+   * Source code can be used for academic purpose. 
+	 For commercial use permission form the author needs to be taken.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  POSSIBILITY OF SUCH DAMAGE. 
+
+  Software released under Creative Commence cc by-nc-sa licence.
+  For legal information refer to: 
+  http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+
+********************************************************************************/
+package iitb.greenHouse.tomatoHarvester.scanner;
+
+import java.lang.Thread;
+import java.lang.Boolean;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.opencv.android.Utils;
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfPoint;
+import org.opencv.core.MatOfPoint2f;
+import org.opencv.core.Point;
+import org.opencv.core.RotatedRect;
+import org.opencv.core.Scalar;
+import org.opencv.core.Size;
+import org.opencv.imgproc.Imgproc;
+
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Rect;
+import android.util.Log;
+import iitb.greenHouse.tomatoHarvester.BluetoothComm;
+
+
+public class Sample1View extends SampleViewBase {
+
+	private BluetoothComm mmBluetoothComm;
+	
+    public static final int     VIEW_MODE_RGBA  = 0;
+    public static final int     VIEW_MODE_GRAY  = 1;
+    public static final int     VIEW_MODE_CANNY = 2;
+    private Mat thresh;
+    private Mat mYuv;
+    private Mat mHsv;
+    private Mat mRgba;
+    private Mat mGraySubmat;
+    private Mat mIntermediateMat;
+	private Bitmap mBitmap;
+	private int mViewMode;
+	private int centerx, centery, imgcenterx, imgcentery;
+	private Boolean fruit_cutted; 
+
+    public Sample1View(Context context, BluetoothComm mBluetoothComm) {
+        super(context);
+        mViewMode = VIEW_MODE_RGBA;
+        mmBluetoothComm = mBluetoothComm; 
+        fruit_cutted = false;
+    }
+
+	@Override
+	protected void onPreviewStarted(int previewWidth, int previewHeight) {
+	    synchronized (this) {
+	    	mYuv = new Mat(getFrameHeight() + getFrameHeight() / 2, getFrameWidth(), CvType.CV_8UC1);
+        	mGraySubmat = mYuv.submat(0, getFrameHeight(), 0, getFrameWidth());
+        	mHsv = new Mat(getFrameHeight(),getFrameWidth(), CvType.CV_8UC3);
+        	mRgba = new Mat();
+        	mIntermediateMat = new Mat();
+        	thresh = new Mat(getFrameHeight(),getFrameWidth(), CvType.CV_8UC3);
+        	mBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Bitmap.Config.ARGB_8888); 
+	    	
+	    	
+        	}
+	}
+	protected void botForward()
+	{
+		 byte[] write_buffer1 = new byte[4];
+  		write_buffer1[0] = 'F';
+  		write_buffer1[1] = 'F';
+  		write_buffer1[2] = 0x0d;
+  		write_buffer1[3] = 0x0a;
+  		
+
+  		try {mmBluetoothComm.BluetoothSend(write_buffer1);   
+  		}
+  		catch (Exception e){e.printStackTrace();
+  		}
+  		
+  		Log.d("your tag!!", "Transmitted: "+ write_buffer1[0] + write_buffer1[0]);
+         
+		
+	}
+	protected void botBackward()
+	{	byte[] write_buffer = new byte[4];
+		write_buffer[0] = 'B';
+		write_buffer[1] = 'B';
+		write_buffer[2] = 0x0d;
+		write_buffer[3] = 0x0a;
+		
+
+		try {mmBluetoothComm.BluetoothSend(write_buffer);   
+		}
+		catch (Exception e){e.printStackTrace();
+		}
+		Log.d("your tag!!", "Transmitted: " + write_buffer);   
+
+	}
+	
+	protected void botStop()
+	{
+		
+		
+		byte[] write_buffer = new byte[4];
+		write_buffer[0] = 'S';
+		write_buffer[1] = 'S';
+		write_buffer[2] = 0x0d;
+		write_buffer[3] = 0x0a;
+		//
+
+		try {mmBluetoothComm.BluetoothSend(write_buffer);   
+		}
+		catch (Exception e){e.printStackTrace();
+		}
+		Log.d("your tag!!", "Transmitted: " + write_buffer);  
+	}
+	
+	protected void pulleyUp()
+	{
+		
+		byte[] write_buffer = new byte[4];
+		write_buffer[0] = 'U';
+		write_buffer[1] = 'U';
+		write_buffer[2] = 0x0d;
+		write_buffer[3] = 0x0a;
+		
+
+		try {mmBluetoothComm.BluetoothSend(write_buffer);   
+		}
+		catch (Exception e){e.printStackTrace();
+		}
+		Log.d("your tag!!", "Transmitted: " + write_buffer);   
+
+		
+	}
+	
+	protected void pulleyDown()
+	{
+		
+		
+		byte[] write_buffer = new byte[4];
+		write_buffer[0] = 'K';
+		write_buffer[1] = 'K';
+		write_buffer[2] = 0x0d;
+		write_buffer[3] = 0x0a;
+		
+
+		try {mmBluetoothComm.BluetoothSend(write_buffer);   
+		}
+		catch (Exception e){e.printStackTrace();
+		}
+		Log.d("your tag!!", "Transmitted: " + (char)write_buffer[0]  + " " + (char)write_buffer[0]);   
+	
+	}
+	
+	protected void pulleyStop()
+	{
+		
+		
+		byte[] write_buffer = new byte[4];
+		write_buffer[0] = 'G';
+		write_buffer[1] = 'G';
+		write_buffer[2] = 0x0d;
+		write_buffer[3] = 0x0a;
+		
+
+		try {mmBluetoothComm.BluetoothSend(write_buffer);   
+		}
+		catch (Exception e){e.printStackTrace();
+		}
+		Log.d("your tag!!", "Transmitted: "+ write_buffer);   
+	}
+	protected void cutterOn()
+	{
+		
+		byte[] write_buffer = new byte[4];
+		write_buffer[0] = 'Z';
+		write_buffer[1] = 'Z';
+		write_buffer[2] = 0x0d;
+		write_buffer[3] = 0x0a;
+		
+
+		try {mmBluetoothComm.BluetoothSend(write_buffer);   
+		}
+		catch (Exception e){e.printStackTrace();
+		}
+		Log.d("your tag!!", "Transmitted: " + write_buffer);   
+	}
+	protected void cutterOff()
+	{
+		byte[] write_buffer1 = new byte[4];
+		write_buffer1[0] = 'E';
+ 		write_buffer1[1] = 'E';
+ 		write_buffer1[2] = 0x0d;
+ 		write_buffer1[3] = 0x0a;
+ 		
+
+ 		try {mmBluetoothComm.BluetoothSend(write_buffer1);   
+ 		}
+ 		catch (Exception e){e.printStackTrace();
+ 		}
+ 		
+ 		Log.d("your tag!!", "Transmitted: "+ write_buffer1[0] + write_buffer1[0]);	
+	}
+	protected void delay()
+	{
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+ 		
+		
+	}
+	@Override
+	protected void onPreviewStopped() {
+		if(mBitmap != null) {
+			mBitmap.recycle();
+		}
+
+		synchronized (this) {
+            // Explicitly deallocate Mats
+            if (mYuv != null)
+                mYuv.release();
+            if (mRgba != null)
+                mRgba.release();
+            if (mGraySubmat != null)
+                mGraySubmat.release();
+            if (mIntermediateMat != null)
+                mIntermediateMat.release();
+
+            mYuv = null;
+            mRgba = null;
+            mGraySubmat = null;
+            mIntermediateMat = null;
+        }
+    }
+
+    @Override
+    protected Bitmap processFrame(byte[] data) { //method for processing each frame
+    	  mYuv.put(0, 0, data);
+          List<MatOfPoint> contours = new ArrayList<MatOfPoint>();	
+          Mat hierarchy = new Mat();
+         mRgba = mRgba.clone();	
+              Imgproc.cvtColor(mYuv, mRgba, Imgproc.COLOR_YUV420sp2RGB, 4);     //converting the color space from YUV to RGB
+              
+              	Imgproc.GaussianBlur(mRgba, mRgba, new Size(9,9), 0,0);			// Applying Gaussian Blur for smoothening
+              	Imgproc.cvtColor(mRgba, mHsv, Imgproc.COLOR_BGR2HSV);			// RGB to HSV
+              	Core.inRange(mHsv, new Scalar(140,100,150), new Scalar(160,255,255), thresh); // per pixel's hue testing to be in the given range
+              	thresh = thresh.clone();
+         
+              	Mat dilatedMask = new Mat();
+              	Imgproc.dilate(thresh, dilatedMask, new Mat());
+                  Imgproc.findContours(dilatedMask, contours, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE); // finding contours
+                  org.opencv.core.Rect box = new org.opencv.core.Rect();
+           		 double maxArea = 0;
+                   Iterator<MatOfPoint> each = contours.iterator();
+                   while (each.hasNext())
+                   {
+                   	MatOfPoint wrapper = each.next();
+                   	double area = Imgproc.contourArea(wrapper); //calculating area of each contour
+                  	if (area > maxArea)
+                  		{maxArea = area;
+                   	 box= Imgproc.boundingRect(wrapper); //box is the bounding box around the contour having maximum area
+}
+                   }
+                centerx= (box.x) + (box.width/2);
+                centery= (box.y) + (box.height/2);
+                imgcenterx=getFrameWidth()/2;
+                imgcentery=getFrameHeight()/2;
+                if(maxArea==0)
+                {
+                	
+                	if(fruit_cutted)
+                	{
+                		byte[] write_buffer0 = new byte[4];
+            			write_buffer0[0] = 'X';
+            			write_buffer0[1] = 'X';
+            			write_buffer0[2] = 0x0d;
+            			write_buffer0[3] = 0x0a;
+            			
+
+            			try {mmBluetoothComm.BluetoothSend(write_buffer0);   
+            			}
+            			catch (Exception e){e.printStackTrace();
+            			}
+            			Log.d("your tag!!", "Transmitted: " + write_buffer0);   
+                		
+                		
+                	}
+               	//forward
+                	botForward();
+             		delay();
+             	//cutter off
+             		cutterOff();
+             		delay();
+             		
+        			pulleyStop();
+              	  
+                }
+                else {
+                if((imgcenterx+(getFrameWidth()*0.25)) < (centerx-20)) //tomato to the left
+                {	
+                	botBackward();
+                delay();
+             		cutterOff();
+             		
+             		delay();
+             		
+             	//	botStop();
+             		
+             		
+             		
+        			pulleyStop();
+        			
+        			            		
+                     
+                }
+                else if((imgcenterx+(getFrameWidth()*0.25)) > (centerx+20)) //tomato at the right
+                {
+                	
+                	
+                	botForward();
+                     
+             		
+                	 delay();
+             	cutterOff();
+              	  
+             	delay();
+         
+             		
+             		
+        			pulleyStop();
+        			
+                }
+                else if(25 < (centery-20))  //tomato below center
+                {
+                	pulleyDown();
+                	
+                delay();
+             		
+               		cutterOff();
+                
+               		delay();
+             		
+             		botStop();
+                }
+                else if ( 25 > (centery+20) ) //tomato above center
+                {
+                	
+                
+              	
+              	pulleyUp();
+                
+                	delay();
+             	  	
+             	cutterOff();
+             	delay();
+             	botStop();
+                }
+                
+                else //tomato at the center
+                {
+         		fruit_cutted = true;
+         		pulleyStop();
+              	  
+         		delay();
+         		
+    		botStop();
+    			
+    		delay();
+    			cutterOn();
+         		
+                }
+                }
+  Scalar color = new Scalar(0,0,255);
+             
+                  Imgproc.drawContours(mRgba, contours, -1, color);
+             
+                  
+                
+          Bitmap bmp = mBitmap;
+
+          try {
+              Utils.matToBitmap(mRgba, bmp);
+          } catch(Exception e) {
+              Log.e("org.opencv.samples.tutorial1", "Utils.matToBitmap() throws an exception: " + e.getMessage());
+              bmp.recycle();
+              bmp = null;
+          }
+          return bmp;
+        
+       
+    }
+
+    public void setViewMode(int viewMode) {
+    	mViewMode = viewMode;
+    }
+
+}
